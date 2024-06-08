@@ -4,41 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea892b82-9e89-4ae2-a675-c5affb2786cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TD-Game.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Enemies/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Enemies/EnemyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/GameCastle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/GameWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/background.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/castle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/enemy.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/enemy0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/enemy1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/enemy2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/enemy3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/floor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/floor.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/tower.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/tower0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/tower1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/tower2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Images/tower3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Towers/PlayerTower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Towers/TowerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/WaveManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mainmenu/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Dimensions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Types.java" afterDir="false" />
+    <list default="true" id="ea892b82-9e89-4ae2-a675-c5affb2786cd" name="Changes" comment="Tower defense game for a school project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="1739c08f-629f-4ff3-bd08-4814acd06c46" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -77,7 +47,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -123,12 +93,25 @@
       <workItem from="1717676028949" duration="13781000" />
       <workItem from="1717837317065" duration="9384000" />
       <workItem from="1717847353442" duration="9710000" />
-      <workItem from="1717857300001" duration="7642000" />
+      <workItem from="1717857300001" duration="7939000" />
     </task>
+    <task id="LOCAL-00001" summary="Tower defense game for a school project">
+      <option name="closed" value="true" />
+      <created>1717865346453</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717865346454</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tower defense game for a school project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tower defense game for a school project" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
