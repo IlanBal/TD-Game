@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea892b82-9e89-4ae2-a675-c5affb2786cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TD-Game.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Enemies/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Enemies/EnemyManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/GameCastle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/GameWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/background.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/castle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/enemy.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/enemy0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/enemy1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/enemy2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/enemy3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/floor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/floor.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/tower.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/tower0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/tower1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/tower2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Images/tower3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Towers/PlayerTower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Towers/TowerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/WaveManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mainmenu/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/Dimensions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/Types.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2hSMOpOf3924N7GEWfxH7OHD5uA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Codes/School/game-project/TD-Game",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codes\School\game-project\TD-Game\src\Images" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Game" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mainmenu.Main" />
+      <module name="TD-Game" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea892b82-9e89-4ae2-a675-c5affb2786cd" name="Changes" comment="" />
+      <created>1717582998500</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717582998500</updated>
+      <workItem from="1717582999829" duration="23406000" />
+      <workItem from="1717676028949" duration="13781000" />
+      <workItem from="1717837317065" duration="9384000" />
+      <workItem from="1717847353442" duration="9710000" />
+      <workItem from="1717857300001" duration="7642000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="infoPanel" language="JAVA" />
+        <watch expression="enemyImage[enemy.getEnemyType()] != null" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
