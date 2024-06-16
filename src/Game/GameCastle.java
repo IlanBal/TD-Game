@@ -11,7 +11,7 @@ public class GameCastle extends GameObject {
     private ImageIcon healthImagePath = new ImageIcon(this.getClass().getResource("Images/heart.png"));
     private Image castleImage;
     private Image healthImage;
-    private int castleWidth, castleHeight;
+    public int castleWidth, castleHeight;
     private int healthWidth, healthHeight;
     private int castleHealth;
 
@@ -37,11 +37,11 @@ public class GameCastle extends GameObject {
         }
     }
 
-    public int getCastleWidth() {
-        return castleWidth;
+    public void setCastleHealth(int health) {
+        this.castleHealth = health;
     }
 
-    public void setCastleWidth(int castleWidth) {
-        this.castleWidth = castleWidth;
+    public int getCastleHealth() {
+        return this.castleHealth;
     }
 }

@@ -5,16 +5,18 @@ import Game.Towers.TowerManager;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 
 import static Utils.Dimensions.*;
 
-public class GameWindow extends JPanel implements Runnable {
+public class GameWindow extends JPanel implements Runnable, MouseListener, MouseMotionListener {
     private boolean game_running = true;
     private Thread gameThread;
-    private JPanel gamePanel;
     private GameCastle castle;
-    private TowerManager towerManager;
     private EnemyManager enemyManager;
+    private TowerManager towerManager;
     private int playerGold = 10;
     private int waveNum = 1;
 
@@ -24,7 +26,7 @@ public class GameWindow extends JPanel implements Runnable {
         this.init();
         gameFrame.setPreferredSize(new Dimension(WINDOW_WIDTH, WINDOW_HEIGHT));
         gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //gameFrame.setResizable(false);
+        gameFrame.setResizable(false);
         gameFrame.setContentPane(this);
         gameFrame.pack();
         gameFrame.setVisible(true);
@@ -32,23 +34,18 @@ public class GameWindow extends JPanel implements Runnable {
     }
 
     private void init() {
-
-        this.castle = new GameCastle(CASTLE_X, CASTLE_Y);
-        this.enemyManager = new EnemyManager(this);
-        this.towerManager = new TowerManager(this);
-        this.gameThread();
+        this.addMouseMotionListener(this);
+        this.addMouseListener(this);
+        castle = new GameCastle(CASTLE_X, CASTLE_Y);
+        enemyManager = new EnemyManager(this);
+        towerManager = new TowerManager(this);
+        gameThread();
 
     }
 
     public void gameThread() {
         gameThread = new Thread(this);
         gameThread.start();
-    }
-
-    public void checkCollision() {
-/*        if(enemyManager.checkCollision(castle)) {
-            enemyManager.
-        }*/
     }
 
     public void paintComponent(Graphics g) {
@@ -60,7 +57,7 @@ public class GameWindow extends JPanel implements Runnable {
 
         ImageIcon floorImagePath = new ImageIcon(this.getClass().getResource("Images/floor.png"));
         Image floorImage = floorImagePath.getImage();
-        g.drawImage(floorImage, 0, WINDOW_HEIGHT-floorImage.getHeight(this), floorImage.getWidth(this.gamePanel), floorImage.getHeight(this), this);
+        g.drawImage(floorImage, 0, WINDOW_HEIGHT-floorImage.getHeight(this), floorImage.getWidth(this), floorImage.getHeight(this), this);
 
         g.setColor(Color.BLACK);
         g.setFont(new Font("Arial", Font.BOLD, 16));
@@ -68,6 +65,7 @@ public class GameWindow extends JPanel implements Runnable {
         g.drawString("Gold:" + playerGold, 20, 50);
 
         this.castle.paint(g);
+        this.towerManager.paint(g);
         this.enemyManager.paint(g);
     }
 
@@ -79,9 +77,6 @@ public class GameWindow extends JPanel implements Runnable {
         double amountOfTicks = 60.0;
         double ns = 1000000000 / amountOfTicks;
 
-        int frames = 0;
-        int updates = 0;
-
         long currentTime;
         while(game_running) {
 
@@ -90,26 +85,66 @@ public class GameWindow extends JPanel implements Runnable {
             if(currentTime - lastTime >= ns) {
                 lastTime = currentTime;
                 repaint();
-                frames++;
             }
 
             //Updates
             if(currentTime - lastUpdate >= ns) {
                 updateGame();
                 lastUpdate = currentTime;
-                updates++;
             }
 
             if(System.currentTimeMillis() - time >= 1000) {
-                System.out.println("FPS: " + frames + "|| UPS: " + updates);
-                frames=0;
-                updates=0;
                 time = System.currentTimeMillis();
             }
         }
     }
 
+    public GameCastle getCastle() {
+        return castle;
+    }
+
     private void updateGame() {
+        if(castle.getCastleHealth() == 0) {
+            JOptionPane.showMessageDialog((Component)null, "You're out of life, game will exit now", "Game Over", -1);
+            System.exit(0);
+        }
+
         enemyManager.moveEnemy();
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        towerManager.mouseClicked(e.getX(), e.getY());
+
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseDragged(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        towerManager.mouseMoved(e.getX(), e.getY());
     }
 }

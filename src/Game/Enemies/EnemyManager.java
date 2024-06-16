@@ -6,6 +6,8 @@ import Utils.Types;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static Utils.Dimensions.ENEMY_X;
 import static Utils.Dimensions.ENEMY_Y;
@@ -20,7 +22,13 @@ public class EnemyManager {
 
     public EnemyManager(GameWindow gameWindow) {
         this.gameWindow = gameWindow;
-        addEnemy(GREEN, SMALL);
+        for(int i=0; i<3;i++)
+            new Timer().schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    addEnemy(GRAY, MEDIUM);
+                }
+            }, 500 * i);
     }
 
     public void addEnemy(int enemyType, int enemySize) {
@@ -42,6 +50,28 @@ public class EnemyManager {
             resizeEnemyImage(enemyImagePath, 0);
     }
 
+    public void removeEnemy(Enemy enemy) {
+        enemyArray.remove(enemy);
+    }
+
+    public void moveEnemy() {
+        for(Enemy enemy: enemyArray) {
+            enemy.move(GetSpeed(enemy.getEnemySize()));
+        }
+
+        checkCollision();
+    }
+
+    public void checkCollision() {
+        for (int i = 0; i < this.enemyArray.size(); i++) {
+            Enemy enemy = enemyArray.get(i);
+            if (enemy.position_X == gameWindow.getCastle().position_X+gameWindow.getCastle().castleWidth) {
+                gameWindow.getCastle().setCastleHealth(gameWindow.getCastle().getCastleHealth()-1);
+                removeEnemy(enemy);
+            }
+        }
+    }
+
 
     private void resizeEnemyImage(ImageIcon originalIcon, int scale) {
         int originalWidth = originalIcon.getIconWidth();
@@ -53,11 +83,7 @@ public class EnemyManager {
         enemyImage = originalIcon.getImage().getScaledInstance(newWidth, newHeight, Image.SCALE_SMOOTH);
     }
 
-    public void moveEnemy() {
-        for(Enemy enemy: enemyArray) {
-            enemy.move(GetSpeed(enemy.getEnemySize()));
-        }
-    }
+
 
     public void paint(Graphics g) {
         for(Enemy enemy: enemyArray) {
