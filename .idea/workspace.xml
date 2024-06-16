@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea892b82-9e89-4ae2-a675-c5affb2786cd" name="Changes" comment="Tower defense game for a school project">
-      <change afterPath="$PROJECT_DIR$/src/Game/Bar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/CustomButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Towers/Tower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Towers/TowerAddBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Towers/TowerAddButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Towers/TowerOptionBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Enemies/EnemyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Enemies/EnemyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/GameCastle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameCastle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Towers/PlayerTower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Towers/TowerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Towers/TowerManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="ea892b82-9e89-4ae2-a675-c5affb2786cd" name="Changes" comment="Tower defense game for a school project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +109,7 @@
       <workItem from="1718349849660" duration="12634000" />
       <workItem from="1718363073322" duration="31586000" />
       <workItem from="1718459044168" duration="23409000" />
-      <workItem from="1718523281927" duration="11384000" />
+      <workItem from="1718523281927" duration="11749000" />
     </task>
     <task id="LOCAL-00001" summary="Tower defense game for a school project">
       <option name="closed" value="true" />
@@ -148,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718536479239</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tower defense game for a school project">
+      <option name="closed" value="true" />
+      <created>1718537065145</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718537065146</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
