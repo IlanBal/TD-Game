@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Wave {
 
-    private ArrayList<Integer> enemyType;
-    private ArrayList<Integer> enemySize;
+    private final ArrayList<Integer> enemyType;
+    private final ArrayList<Integer> enemySize;
 
     public Wave(ArrayList<Integer> enemyType, ArrayList<Integer> enemySize) {
         this.enemyType = enemyType;

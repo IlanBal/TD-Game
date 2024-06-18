@@ -4,8 +4,11 @@ import Game.GameObject;
 
 public class Projectile extends GameObject {
 
-    private int id, projectileType, damage;
-    private double xSpeed, ySpeed;
+    private final int id;
+    private final int projectileType;
+    private final int damage;
+    private final double xSpeed;
+    private final double ySpeed;
     private boolean isProjectileActive = true;
 
 

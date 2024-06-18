@@ -1,7 +1,6 @@
 package Game.Enemies;
 
 import Game.GameWindow;
-import Game.Waves.Wave;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,10 +12,10 @@ import static Utils.Types.Enemies.*;
 
 public class EnemyManager {
 
-    private ArrayList<Enemy> enemyArray = new ArrayList<>();
-    private GameWindow gameWindow;
+    private final ArrayList<Enemy> enemyArray = new ArrayList<>();
+    private final GameWindow gameWindow;
     private ImageIcon enemyImagePath;
-    private Image[] enemyImage;
+    private final Image[] enemyImage;
     private int enemyNum = 0;
 
     public EnemyManager(GameWindow gameWindow) {

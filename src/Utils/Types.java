@@ -54,7 +54,7 @@ public class Types {
                 case MAGE_TOWER: return 200;
                 case ICE_TOWER: return 100;
                 case BOULDER_TOWER: return 150;
-                case SUPPORT_TOWER: return 300;
+                case SUPPORT_TOWER: return 250;
             }
             return 0;
         }

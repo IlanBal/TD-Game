@@ -29,7 +29,7 @@ public class GameWindow extends JPanel implements Runnable, MouseListener, Mouse
     private WaveManager waveManager;
     private DecimalFormat formatter = new DecimalFormat("#.#");
 
-    private int playerGold = 500;
+    private int playerGold = 100;
     private int waveNum = 1;
     private int projectileCount = 0;
 
@@ -131,17 +131,16 @@ public class GameWindow extends JPanel implements Runnable, MouseListener, Mouse
         waveManager.update();
 
         if (isAllEnemiesDead()) {
-            if(isThereMoreWaves()) {
-                waveManager.startWaveTimer();
-                if(isWaveTimerOver())
-                    waveManager.incWaveIndex();
+            waveManager.startWaveTimer();
+            if(isWaveTimerOver()) {
+                waveManager.incWaveIndex();
             }
         }
 
         if(isEnemySpawnTime()) {
-      //      if(!waveManager.isWaveTimeOver()) {
-                spawnEnemy();
-     //       }
+            if(!waveManager.isWaveTimerOver()) {
+                spawnEnemies();
+            }
         }
 
         enemyManager.update();
@@ -155,9 +154,10 @@ public class GameWindow extends JPanel implements Runnable, MouseListener, Mouse
         }
     }
 
-    private void spawnEnemy() {
+    private void spawnEnemies() {
         enemyManager.spawnEnemy(waveManager.getNextEnemyType(), waveManager.getNextEnemySize());
     }
+
 
     private boolean isWaveTimerOver() {
         return waveManager.isWaveTimerOver();

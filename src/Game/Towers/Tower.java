@@ -8,12 +8,14 @@ import java.awt.*;
 import static Utils.Types.Towers.*;
 
 public class Tower extends GameObject {
-    private GameWindow gameWindow;
-    private int id, towerType, cooldownTick;
+    private final GameWindow gameWindow;
+    private final int id;
+    private final int towerType;
+    private int cooldownTick;
     private int damage, range, cooldown;
     private int upgradeAmount = 0;
     private int supportTick;
-    private int supportTime = 60 * 2;
+    private final int supportTime = 60 * 2;
     public TowerOptionBar towerDisplayBar;
     private boolean isTowerPressed;
     private boolean isSupported = false;

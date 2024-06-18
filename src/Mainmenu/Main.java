@@ -11,13 +11,13 @@ import java.awt.*;
 //and to exit the game
 public class Main extends JPanel {
 
-    private JPanel menuPanel;
-    private JPanel infoPanel;
+    private final JPanel menuPanel;
+    private final JPanel infoPanel;
 
     public Main() {
         JFrame frame = new JFrame("Tower defense");
         frame.setSize(Dimensions.WINDOW_WIDTH, Dimensions.WINDOW_HEIGHT);
-        frame.setLocationRelativeTo((Component) null);
+        frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         infoPanel = new InfoPanel();

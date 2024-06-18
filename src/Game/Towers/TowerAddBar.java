@@ -12,10 +12,10 @@ import static Utils.Types.Towers.GetTowerName;
 
 
 public class TowerAddBar extends Bar {
-    private GameWindow gameWindow;
+    private final GameWindow gameWindow;
     public CustomButton[] towerButton = new CustomButton[4];
     private ImageIcon towerImagePath;
-    private Image[] towerImage = new Image[4];
+    private final Image[] towerImage = new Image[4];
     private boolean isButtonPressed;
     private boolean isBarShown;
 

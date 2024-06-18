@@ -10,10 +10,10 @@ import static Utils.Types.Towers.*;
 
 public class TowerOptionBar extends Bar {
 
-    private GameWindow gameWindow;
-    private Tower tower;
+    private final GameWindow gameWindow;
+    private final Tower tower;
     private CustomButton upgradeButton, sellButton;
-    private int towerType;
+    private final int towerType;
     private boolean isButtonPressed;
     private boolean isBarShown;
     private boolean isUpgradable = true;
@@ -57,6 +57,7 @@ public class TowerOptionBar extends Bar {
                     g.drawString("Upgrade: " + GetUpgradeCost(towerType), x + width / 2 - textWidth / 2, y + height / 2 + upgradeButton.height);
                 }
             } else {
+
                 setButtonBlocked(true);
                 upgradeButton.setButtonBlocked(true);
             }

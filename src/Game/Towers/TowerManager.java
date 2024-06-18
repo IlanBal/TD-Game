@@ -16,16 +16,16 @@ import static Utils.Types.Towers.*;
 
 public class TowerManager {
     
-    private int maxTowers = 8;
+    private final int maxTowers = 8;
     private int towerAmount = 0;
     private int removedTowers = 0;
     
-    private ArrayList<Tower> towerArray = new ArrayList<>();
-    private ArrayList<TowerAddButton> addTowerButton = new ArrayList<>();
+    private final ArrayList<Tower> towerArray = new ArrayList<>();
+    private final ArrayList<TowerAddButton> addTowerButton = new ArrayList<>();
     private Tower selectedTower;
     private ImageIcon towerImagePath;
     private Image[] towerImage;
-    private GameWindow gameWindow;
+    private final GameWindow gameWindow;
 
     private boolean isTowerBuyable = true;
 
@@ -151,7 +151,7 @@ public class TowerManager {
     private void drawSelectedTowerRange(Graphics g, Tower selectedTower) {
         g.setColor(Color.WHITE);
         g.drawArc((int) (selectedTower.position_X + 32 - selectedTower.getRange()), (int) (selectedTower.position_Y + 64 - selectedTower.getRange()),
-                (int) selectedTower.getRange()*2,(int) selectedTower.getRange()*2, 0, 180);
+                selectedTower.getRange() *2, selectedTower.getRange() *2, 0, 180);
     }
 
     public void update() {
@@ -220,9 +220,11 @@ public class TowerManager {
             if (selectedTower.getBounds().contains(x, y)) {
                 selectedTower.showActionBar();
             } else if(selectedTower.towerDisplayBar.getUpgradeButton().getBounds().contains(x, y)) {
-                selectedTower.towerDisplayBar.setButtonPressed(true);
-                upgradeTower(selectedTower);
-                selectedTower.towerDisplayBar.setButtonPressed(false);
+                if(selectedTower.towerDisplayBar.isUpgradable() && gameWindow.getPlayerGold() >= GetUpgradeCost(selectedTower.getId())) {
+                    selectedTower.towerDisplayBar.setButtonPressed(true);
+                    upgradeTower(selectedTower);
+                    selectedTower.towerDisplayBar.setButtonPressed(false);
+                }
             } else if (selectedTower.towerDisplayBar.getSellButton().getBounds().contains(x, y)) {
                 selectedTower.towerDisplayBar.setButtonPressed(true);
                 removeTower(selectedTower);

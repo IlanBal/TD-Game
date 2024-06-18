@@ -4,14 +4,14 @@ import Game.GameObject;
 
 import java.awt.*;
 
-import static Utils.Types.Enemies.*;
+import static Utils.Types.Enemies.GetStartHealth;
 
 public class Enemy extends GameObject {
 
 
-    private int id;
-    private int enemyType;
-    private int enemySize;
+    private final int id;
+    private final int enemyType;
+    private final int enemySize;
     private int health;
     protected int slowTick;
     private boolean isSlowed = false;
