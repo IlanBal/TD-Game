@@ -39,7 +39,7 @@ public class Main extends JPanel {
         gameStartButton.addActionListener(event -> {
             frame.dispose();
             new GameWindow();
-        });
+         });
 
         JButton informationButton = new JButton("Information");
         informationButton.setFont(new Font("Arial", Font.BOLD, 24));
@@ -116,5 +116,12 @@ public class Main extends JPanel {
             buttonPanel.add(mainMenuButton);
             this.add(buttonPanel, BorderLayout.SOUTH);
         }
+    }
+
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        ImageIcon imagePath = new ImageIcon(this.getClass().getResource("/Game/Images/background.png"));
+        Image image = imagePath.getImage();
+        g.drawImage(image, 0, 0, this.getWidth(), this.getHeight(), null);
     }
 }

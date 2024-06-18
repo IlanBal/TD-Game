@@ -16,8 +16,8 @@ public class GameCastle extends GameObject {
     private int castleHealth;
 
 
-    public GameCastle(int position_X, int position_Y) {
-        super(position_X, position_Y);
+    public GameCastle(int position_X, int position_Y, int width, int height) {
+        super(position_X, position_Y, width, height);
         this.castleImage = this.castleImagePath.getImage();
         this.castleWidth = this.castleImagePath.getIconWidth();
         this.castleHeight = this.castleImagePath.getIconHeight();
@@ -29,11 +29,11 @@ public class GameCastle extends GameObject {
     }
 
     public void paint(Graphics g) {
-        g.drawImage(this.castleImage, position_X, position_Y, null);
+        g.drawImage(this.castleImage, (int) position_X, (int) position_Y, null);
 
         int distance=15;
         for(int i=0; i<this.castleHealth; distance += healthWidth + 5, i++) {
-            g.drawImage(this.healthImage, this.position_X + distance, this.position_Y - 35, null);
+            g.drawImage(this.healthImage, (int) (this.position_X + distance), (int) (this.position_Y - 35), null);
         }
     }
 

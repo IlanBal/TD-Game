@@ -14,6 +14,13 @@ public class Dimensions {
     public static final int ENEMY_X;
     public static final int ENEMY_Y;
 
+    public static int GetDistance(int x1, int y1, int x2, int y2) {
+        int xDiff = Math.abs(x1 - x2);
+        int yDiff = Math.abs(y1 - y2);
+
+        return (int) Math.hypot(xDiff,yDiff);
+    }
+
     public Dimensions() {
 
     }

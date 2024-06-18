@@ -3,21 +3,20 @@ package Game;
 import java.awt.*;
 
 public class GameObject {
-    public int position_X;
-    public int position_Y;
+    public float position_X;
+    public float position_Y;
+    public int width, height;
 
-    public GameObject(int position_X, int position_Y, int health, int speed) {
+    public GameObject(float position_X, float position_Y, int width, int height) {
         this.position_X = position_X;
         this.position_Y = position_Y;
-
+        this.width = width;
+        this.height = height;
     }
 
-    public GameObject(int position_X, int position_Y) {
-        this.position_X = position_X;
-        this.position_Y = position_Y;
-    }
 
-    public Rectangle getBounds(int width, int height) {
-        return new Rectangle(position_X, position_Y, width, height);
+
+    public Rectangle getBounds() {
+        return new Rectangle((int) position_X,(int) position_Y, width, height);
     }
 }

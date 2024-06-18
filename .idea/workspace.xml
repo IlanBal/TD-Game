@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea892b82-9e89-4ae2-a675-c5affb2786cd" name="Changes" comment="Tower defense game for a school project" />
+    <list default="true" id="ea892b82-9e89-4ae2-a675-c5affb2786cd" name="Changes" comment="Tower defense game for a school project">
+      <change afterPath="$PROJECT_DIR$/src/Game/Projectiles/Projectile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Projectiles/ProjectileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Waves/Wave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Bar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Bar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Enemies/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Enemies/EnemyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Enemies/EnemyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameCastle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameCastle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Images/tower_attack3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Images/tower_attack3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Towers/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Towers/Tower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Towers/TowerAddBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Towers/TowerAddBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Towers/TowerAddButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Towers/TowerAddButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Towers/TowerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Towers/TowerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Towers/TowerOptionBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Towers/TowerOptionBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/WaveManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Waves/WaveManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mainmenu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mainmenu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Dimensions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Dimensions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Types.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Types.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +56,12 @@
     &quot;accountId&quot;: &quot;1739c08f-629f-4ff3-bd08-4814acd06c46&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Game/Waves/WaveManager.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -109,7 +136,9 @@
       <workItem from="1718349849660" duration="12634000" />
       <workItem from="1718363073322" duration="31586000" />
       <workItem from="1718459044168" duration="23409000" />
-      <workItem from="1718523281927" duration="11749000" />
+      <workItem from="1718523281927" duration="36492000" />
+      <workItem from="1718609120196" duration="53047000" />
+      <workItem from="1718692014211" duration="7323000" />
     </task>
     <task id="LOCAL-00001" summary="Tower defense game for a school project">
       <option name="closed" value="true" />
@@ -143,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718537065146</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tower defense game for a school project">
+      <option name="closed" value="true" />
+      <created>1718537400316</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718537400316</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -34,7 +34,7 @@ public class TowerAddButton extends CustomButton {
 
     public void showActionBar() {
         setMousePressed(true);
-        towerSelectionBar = new TowerAddBar(gameWindow, x - 175/2 +10 , y - 100, 175, 60);
+        towerSelectionBar = new TowerAddBar(gameWindow, x - 175/2 +10 , y - 100, 175, 90);
         towerSelectionBar.setBarShown(true);
     }
 
